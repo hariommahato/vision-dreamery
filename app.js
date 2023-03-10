@@ -11,7 +11,9 @@ dotenv.config({ path: "./config/config.env" });
 app.use(cookieParser());
 app.use(bodyParser.json({limit: '500mb'}));
 app.use(bodyParser.urlencoded({limit: '500mb', extended: true}));
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({
+    origin:"https://easylinkmultivendor-frontend.onrender.com"
+}));
 app.use(fileUpload());
 const product = require("./routes/productRoute");
 const userRouter = require("./routes/userRoute");

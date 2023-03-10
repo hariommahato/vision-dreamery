@@ -1,7 +1,6 @@
 const Carousel = require("../models/carousel");
 const ErrorHander = require("../utils/errorHandler");
 const catchAsyncError = require("../middleware/catchAsyncError");
-const ApiFeatures = require("../utils/apifeatures");
 const cloudinary = require("cloudinary");
 
 // Create Product

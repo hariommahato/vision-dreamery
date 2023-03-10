@@ -7,7 +7,6 @@ const {
   deleteCarousel,
 } = require("../controllers/carousel");
 
-const { isAuthenticatedUser } = require("../middleware/auth");
 const router = express.Router();
 router.route("/carousel").get(getAllCarousel);
 
