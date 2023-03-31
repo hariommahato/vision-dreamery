@@ -5,7 +5,10 @@ const productSchema = new mongoose.Schema({
     required: [true, "please Enter product name"],
     trim: true,
   },
-
+  sold:{
+    type:Number,
+    default:0
+  },
   description: {
     type: String,
     required: [true, "please Enter Description"],

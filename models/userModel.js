@@ -33,6 +33,10 @@ const userSchema = new mongoose.Schema({
   address:{
     type:String
   },
+  admin:{
+    type:Boolean,
+    default:false
+  },
   shopname:{
     type:String,
   },

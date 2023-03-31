@@ -15,7 +15,7 @@ exports.registerUser = catchAsyncError(async (req, res, next) => {
   });
 
   const { name, email, password, phone,address,shopname,isseller} = req.body;
-
+  console.log(req.body)
   const user = await User.create({
     name,
     email,
@@ -192,6 +192,8 @@ exports.updateProfile = catchAsyncError(async (req, res, next) => {
     name: req.body.name,
     email: req.body.email,
     phone: req.body.phone,
+    address:req.body.address,
+    shopname:req.body.shopname
   };
 
   if (req.body.avatar !== "") {
