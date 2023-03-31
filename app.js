@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use(bodyParser.json({limit: '500mb'}));
 app.use(bodyParser.urlencoded({limit: '500mb', extended: true}));
 app.use(cors({
-    origin:["https://easylink.onrender.com","http://localhost:3003"]
+    origin:["https://vision-dreamery-ecommerce.onrender.com","http://localhost:3003"]
 
 }));
 app.use(fileUpload());
